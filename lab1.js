@@ -36,7 +36,7 @@ function cupsOfCoffee(howManyCups){
 			x = x - 1;
 			//finalstr += str+"<br>";
 		}
-		str1 = "1 cup of coffee on the desk! 1 cup of coffee!\n Pick it up, drink the cup, no more coffee left on the desk!\n";
+		str1 = "1 cup of coffee on the desk! 1 cup of coffee!\n Pick it up, drink the cup, no more coffee left on the desk!";
 	}
 	else
 	{
@@ -46,14 +46,45 @@ function cupsOfCoffee(howManyCups){
 }
 
 function occurrencesOfSubstring(fullString, substring){
-	return 0;
+	var matchesCount = 0;
+	if (typeof fullString === 'string' && typeof substring === 'string' && fullString && substring)
+	{
+		matchesCount = fullString.split(substring).length - 1;
+	}
+	else
+	{
+		throw ("invalid inputs");
+	}
+	return matchesCount;
 }
 
 function randomizeSentences(paragraph){
-	return 0;
+	if (typeof paragraph === 'string' && paragraph)
+	{
+		var x = paragraph;
+		console.log("Original: \n" + paragraph + "\n");
+		var tokens = x.split(".");
+	
+		for (var i = tokens.length - 1; i > 0; i--) 
+		{
+			var j = Math.floor(Math.random() * (i + 1));
+			var temp = tokens[i];
+			tokens[i] = tokens[j];
+			tokens[j] = temp;
+		}
+		console.log("Randomised: \n");
+		var randtokens = tokens.join([separator = '.']);
+		return randtokens;
+	}	
+	else
+	{
+		throw ("invalid inputs");
+	}
 }
 //console.log(sumOfSquares(2,4,10));
 //console.log(sumOfSquares('test',4,10));
 //console.log(sumOfSquares(5,3,10));
 //console.log(sumOfSquares(10));
 //console.log(cupsOfCoffee(10));
+//console.log(occurrencesOfSubstring("helloww worldwwhello", ""));
+//console.log(randomizeSentences("My lord flutes the registered choice around a physiology.Beside the needed water mends the cant monster.The stamp briefs a compound wife."));
