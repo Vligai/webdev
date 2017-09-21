@@ -23,11 +23,11 @@ function that uses console.log to print hello to someone!
 */
 function sayHelloTo(firstName, lastName, title){
 	if (typeof firstName === 'string' && typeof lastName === 'undefined' && typeof title === 'undefined')
-		return "Hello, " + firstName + "!";
+		console.log("Hello, " + firstName + "!");
 	else if (typeof firstName === 'string' && typeof lastName === 'string' && typeof title === 'undefined')
-		return "Hello " + firstName + " " + lastName + ". I hope you are having a good day!";
+		console.log("Hello " + firstName + " " + lastName + ". I hope you are having a good day!");
 	else if (typeof firstName === 'string' && typeof lastName === 'string' && typeof title === 'string')
-		return "Greetings " + title + " " + firstName + " " + lastName + "! Have a good evening!";
+		console.log("Greetings " + title + " " + firstName + " " + lastName + "! Have a good evening!");
 	else if (typeof firstName === 'undefined' && typeof lastName === 'undefined' && typeof title === 'undefined')
 		throw("Need at least one variable!");
 	else
@@ -163,11 +163,11 @@ console.log("sayHelloTo():");
 //console.log(sayHelloTo());
 console.log("Log: Need at least one variable!");
 console.log("sayHelloTo('Phil'):");
-console.log(sayHelloTo("Phil"));
+sayHelloTo("Phil");
 console.log("sayHelloTo('Phil', 'Barresi') :");
-console.log(sayHelloTo("Phil", "Barresi"));
+sayHelloTo("Phil", "Barresi");
 console.log("sayHelloTo('Phil', 'Barresi', 'Mr.') :");
-console.log(sayHelloTo("Phil", "Barresi", "Mr."));
+sayHelloTo("Phil", "Barresi", "Mr.");
 //TESTING cupsOfCoffee
 console.log("---------------------------------------");
 console.log("Testing cupsOfCoffee: " );
