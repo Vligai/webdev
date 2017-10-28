@@ -1,7 +1,7 @@
 {
-  "name": "cs-546-lab-6",
+  "name": "cs-546-lab-7",
   "version": "1.0.0",
-  "description": "546WS Lab 6",
+  "description": "546WS Lab 7",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.2",
-    "morgan": "^1.9.0"
+    "mongodb": "^2.2.33",
+    "morgan": "^1.9.0",
+    "node-uuid": "^1.4.8"
   }
 }
