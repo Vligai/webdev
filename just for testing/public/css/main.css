@@ -1,0 +1,81 @@
+body {
+    background: #FEFEFE;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 15pt;
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+}
+
+header {
+    border-bottom: 1px solid #AFAFAF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+}		
+
+.is-palindrome {
+    color: #0000FF;
+    font-size: 1rem;
+	display:inline-block;
+	float:left;
+}
+.not-palindrome {
+    color: #FF0000;
+    font-size: 1rem;
+	display:inline-block;
+	float:left;
+}
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+#error-container {
+    color: #800000;
+    background: #FEFEFE;
+    line-height: 3;
+}
+
+.iput-box {
+    line-height: 1.5;
+    width: 20rem;  
+}
