@@ -1,0 +1,15 @@
+<form action="/login" method="post">
+    <div>
+        <label>Username:</label>
+        <input type="text" class="form-control" name="username" placeholder="username">
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" class="form-control" name="password" placeholder="password"> <br>
+    <div 
+		class="alert alert-danger" id="error-container">{{message}} <br>
+	</div>  
+    <div>
+		<input type="submit" class="btn btn-default" value="Log In"/>
+    </div>
+</form>
